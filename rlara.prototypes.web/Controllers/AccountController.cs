@@ -88,9 +88,7 @@ namespace rlara.prototypes.web.Controllers
             return View(obj);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult LogOff()
+        public IActionResult LogOut()
         {
             _loginManager.SignOutAsync().Wait();
             return RedirectToAction("Login", "Account");

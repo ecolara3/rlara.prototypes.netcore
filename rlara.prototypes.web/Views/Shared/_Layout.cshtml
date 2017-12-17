@@ -49,7 +49,8 @@
                     }
                     else
                     {
-                        <li>Welcome @User.Identity.Name</li>
+                        <li><a asp-area="" asp-controller="" asp-action="">Welcome @User.Identity.Name</a></li>
+                        <li><a asp-area="" asp-controller="Account" asp-action="LogOut" >LogOut</a></li>
                     }
 
 
