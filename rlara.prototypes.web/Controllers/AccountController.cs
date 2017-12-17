@@ -29,7 +29,7 @@ namespace rlara.prototypes.web.Controllers
         public IActionResult Register(RegisterViewModel obj)
         {
 
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && obj.RegistrationKey == "e5362f8b-687d-4073-8327-454ac70a15de")
             {
                 User user = new User();
                 user.UserName = obj.UserName;

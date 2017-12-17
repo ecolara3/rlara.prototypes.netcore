@@ -19,6 +19,8 @@ namespace rlara.prototypes.web.ViewModels
         [Required]
         public string FullName { get; set; }
         [Required]
+        public string RegistrationKey { get; set; }
+        [Required]
         [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
     }
