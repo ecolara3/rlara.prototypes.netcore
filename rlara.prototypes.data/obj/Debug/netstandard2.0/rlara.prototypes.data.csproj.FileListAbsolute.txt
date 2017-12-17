@@ -1,0 +1,8 @@
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/bin/Debug/netstandard2.0/rlara.prototypes.data.deps.json
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/bin/Debug/netstandard2.0/rlara.prototypes.data.dll
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/bin/Debug/netstandard2.0/rlara.prototypes.data.pdb
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/obj/Debug/netstandard2.0/rlara.prototypes.data.csproj.CoreCompileInputs.cache
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/obj/Debug/netstandard2.0/rlara.prototypes.data.AssemblyInfoInputs.cache
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/obj/Debug/netstandard2.0/rlara.prototypes.data.AssemblyInfo.cs
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/obj/Debug/netstandard2.0/rlara.prototypes.data.dll
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/obj/Debug/netstandard2.0/rlara.prototypes.data.pdb
