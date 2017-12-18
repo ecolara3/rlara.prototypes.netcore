@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace rlara.prototypes.data.Entities
+namespace rlara.prototypes.identity.Entities
 {
     public class User:IdentityUser
     {

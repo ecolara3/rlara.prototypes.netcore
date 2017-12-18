@@ -4,7 +4,9 @@
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.web.dll
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.web.pdb
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.data.dll
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.identity.dll
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.data.pdb
+/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/bin/Debug/netcoreapp2.0/rlara.prototypes.identity.pdb
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/obj/Debug/netcoreapp2.0/rlara.prototypes.web.csproj.CoreCompileInputs.cache
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/obj/Debug/netcoreapp2.0/rlara.prototypes.web.AssemblyInfoInputs.cache
 /Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/obj/Debug/netcoreapp2.0/rlara.prototypes.web.AssemblyInfo.cs

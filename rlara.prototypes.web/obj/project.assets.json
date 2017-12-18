@@ -4751,8 +4751,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity": "2.0.1",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
           "Microsoft.EntityFrameworkCore.Design": "2.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
         },
@@ -4761,6 +4759,22 @@
         },
         "runtime": {
           "bin/placeholder/rlara.prototypes.data.dll": {}
+        }
+      },
+      "rlara.prototypes.identity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.0.1",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/rlara.prototypes.identity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/rlara.prototypes.identity.dll": {}
         }
       }
     }
@@ -12545,18 +12559,23 @@
       "type": "project",
       "path": "../rlara.prototypes.data/rlara.prototypes.data.csproj",
       "msbuildProject": "../rlara.prototypes.data/rlara.prototypes.data.csproj"
+    },
+    "rlara.prototypes.identity/1.0.0": {
+      "type": "project",
+      "path": "../rlara.prototypes.identity/rlara.prototypes.identity.csproj",
+      "msbuildProject": "../rlara.prototypes.identity/rlara.prototypes.identity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "rlara.prototypes.data >= 1.0.0"
+      "rlara.prototypes.data >= 1.0.0",
+      "rlara.prototypes.identity >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/robertlara/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/robertlara/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -12567,11 +12586,8 @@
       "packagesPath": "/Users/robertlara/.nuget/packages/",
       "outputPath": "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.web/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "/Users/robertlara/.nuget/NuGet/NuGet.Config"
+        "/Users/robertlara/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -12584,14 +12600,12 @@
           "projectReferences": {
             "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/rlara.prototypes.data.csproj": {
               "projectPath": "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/rlara.prototypes.data.csproj"
+            },
+            "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.identity/rlara.prototypes.identity.csproj": {
+              "projectPath": "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.identity/rlara.prototypes.identity.csproj"
             }
           }
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -12599,8 +12613,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "2.0.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",

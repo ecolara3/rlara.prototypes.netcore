@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using rlara.prototypes.data.Entities;
+using rlara.prototypes.identity.Entities;
 using rlara.prototypes.web.Models;
 
 namespace rlara.prototypes.web.Controllers

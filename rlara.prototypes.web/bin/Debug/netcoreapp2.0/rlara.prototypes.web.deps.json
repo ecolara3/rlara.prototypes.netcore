@@ -25,7 +25,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "rlara.prototypes.data": "1.0.0"
+          "rlara.prototypes.data": "1.0.0",
+          "rlara.prototypes.identity": "1.0.0"
         },
         "runtime": {
           "rlara.prototypes.web.dll": {}
@@ -3797,8 +3798,6 @@
       },
       "rlara.prototypes.data/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity": "2.0.1",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
           "Microsoft.EntityFrameworkCore.Design": "2.0.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
         },
@@ -3807,6 +3806,20 @@
         },
         "compile": {
           "rlara.prototypes.data.dll": {}
+        }
+      },
+      "rlara.prototypes.identity/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.0.1",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.0.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.1"
+        },
+        "runtime": {
+          "rlara.prototypes.identity.dll": {}
+        },
+        "compile": {
+          "rlara.prototypes.identity.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -5996,6 +6009,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "rlara.prototypes.data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "rlara.prototypes.identity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

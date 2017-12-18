@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using rlara.prototypes.data.Entities;
+using rlara.prototypes.identity.Entities;
 using rlara.prototypes.web.ViewModels;
 
 namespace rlara.prototypes.web.Controllers

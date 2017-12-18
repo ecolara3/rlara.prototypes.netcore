@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using rlara.prototypes.data.Entities;
 
 namespace rlara.prototypes.data
 {
-    public class StoreDBContext:IdentityDbContext<User, Role, string>
+    public class StoreDBContext:DbContext
     {
         public StoreDBContext(DbContextOptions<StoreDBContext> options)
             : base(options)

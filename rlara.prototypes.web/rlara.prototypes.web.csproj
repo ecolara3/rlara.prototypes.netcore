@@ -11,8 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\rlara.prototypes.data\rlara.prototypes.data.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations" />
+    <ProjectReference Include="..\rlara.prototypes.identity\rlara.prototypes.identity.csproj" />
   </ItemGroup>
 </Project>

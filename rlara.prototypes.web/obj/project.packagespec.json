@@ -14,6 +14,9 @@
         "projectReferences": {
           "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/rlara.prototypes.data.csproj": {
             "projectPath": "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.data/rlara.prototypes.data.csproj"
+          },
+          "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.identity/rlara.prototypes.identity.csproj": {
+            "projectPath": "/Users/robertlara/RiderProjects/rlara.prototypes/rlara.prototypes.identity/rlara.prototypes.identity.csproj"
           }
         }
       }

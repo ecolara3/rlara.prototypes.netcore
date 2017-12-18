@@ -23,14 +23,6 @@
           "target": "Package",
           "version": "2.0.0"
         },
-        "Microsoft.AspNetCore.Identity": {
-          "target": "Package",
-          "version": "2.0.1"
-        },
-        "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-          "target": "Package",
-          "version": "2.0.1"
-        },
         "Microsoft.EntityFrameworkCore.Design": {
           "target": "Package",
           "version": "2.0.1"

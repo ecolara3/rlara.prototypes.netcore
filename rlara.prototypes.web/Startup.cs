@@ -9,7 +9,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using rlara.prototypes.data;
-using rlara.prototypes.data.Entities;
+using rlara.prototypes.identity;
+using rlara.prototypes.identity.Entities;
 
 namespace rlara.prototypes.web
 {
@@ -25,8 +26,10 @@ namespace rlara.prototypes.web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<StoreDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("rlara.prototypes.web")));
-            services.AddIdentity<User, Role>().AddEntityFrameworkStores<StoreDBContext>().AddDefaultTokenProviders();
+            services.AddDbContext<StoreDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StoreConnection"), b => b.MigrationsAssembly("rlara.prototypes.web")));
+            services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("rlara.prototypes.web")));
+            
+            services.AddIdentity<User, Role>().AddEntityFrameworkStores<UserDBContext>().AddDefaultTokenProviders();
 
             services.AddMvc();
         }
