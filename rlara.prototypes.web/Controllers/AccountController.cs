@@ -1,7 +1,9 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using rlara.prototypes.identity.Entities;
+using rlara.prototypes.web.Models;
 using rlara.prototypes.web.ViewModels;
 
 namespace rlara.prototypes.web.Controllers
@@ -11,12 +13,14 @@ namespace rlara.prototypes.web.Controllers
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _loginManager;
         private readonly RoleManager<Role> _roleManager;
+        private readonly IOptions<AppSettings> _appSettings;
 
-        public AccountController(UserManager<User> userManager,SignInManager<User> loginManager,RoleManager<Role> roleManager)
+        public AccountController( IOptions<AppSettings> appSettings,UserManager<User> userManager,SignInManager<User> loginManager,RoleManager<Role> roleManager)
         {
             _userManager = userManager;
             _loginManager = loginManager;
             _roleManager = roleManager;
+            _appSettings = appSettings;
         }
 
         public IActionResult Register()
@@ -29,7 +33,7 @@ namespace rlara.prototypes.web.Controllers
         public IActionResult Register(RegisterViewModel obj)
         {
 
-            if (ModelState.IsValid && obj.RegistrationKey == "e5362f8b-687d-4073-8327-454ac70a15de")
+            if (ModelState.IsValid && obj.RegistrationKey == _appSettings.Value.RegistrationKey)
             {
                 User user = new User();
                 user.UserName = obj.UserName;

@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using rlara.prototypes.data;
 using rlara.prototypes.identity;
 using rlara.prototypes.identity.Entities;
+using rlara.prototypes.web.Models;
 
 namespace rlara.prototypes.web
 {
@@ -28,7 +29,7 @@ namespace rlara.prototypes.web
         {
             services.AddDbContext<StoreDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StoreConnection"), b => b.MigrationsAssembly("rlara.prototypes.web")));
             services.AddDbContext<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("rlara.prototypes.web")));
-            
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddIdentity<User, Role>().AddEntityFrameworkStores<UserDBContext>().AddDefaultTokenProviders();
 
             services.AddMvc();
