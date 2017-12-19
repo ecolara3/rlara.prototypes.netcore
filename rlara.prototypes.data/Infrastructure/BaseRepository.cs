@@ -1,19 +1,8 @@
 ﻿using System.Linq;
+using rlara.prototypes.data.Interfaces;
 
 namespace rlara.prototypes.data.Infrastructure
 {
-    public interface IBaseRepository<T> where T : class
-    {
-        IQueryable<T> GetAll();
-
-        T GetById(int id);
-
-        void Create(T entity);
-
-        void Update(T entity);
-
-        void Delete(T entity);
-    }
 
     public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
     {

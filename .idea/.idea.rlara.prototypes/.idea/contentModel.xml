@@ -17,6 +17,12 @@
         <e p="Infrastructure" t="Include">
           <e p="BaseRepository.cs" t="Include" />
         </e>
+        <e p="Interfaces" t="Include">
+          <e p="IBaseRepository.cs" t="Include" />
+          <e p="ICategoryRepository.cs" t="Include" />
+          <e p="IImageRepository.cs" t="Include" />
+          <e p="IProductRepository.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
@@ -50,7 +56,18 @@
       </e>
       <e p="rlara.prototypes.services" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Models" t="Include" />
+        <e p="CategoryService.cs" t="Include" />
+        <e p="DomainModels" t="Include">
+          <e p="Category.cs" t="Include" />
+          <e p="Image.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+        </e>
+        <e p="ImageService.cs" t="Include" />
+        <e p="Interfaces" t="Include">
+          <e p="ICategoryService.cs" t="Include" />
+          <e p="IImageService.cs" t="Include" />
+          <e p="IProductService.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
@@ -58,6 +75,7 @@
             </e>
           </e>
         </e>
+        <e p="ProductService.cs" t="Include" />
         <e p="rlara.prototypes.services.csproj" t="IncludeRecursive" />
       </e>
       <e p="rlara.prototypes.sln" t="IncludeFlat" />
