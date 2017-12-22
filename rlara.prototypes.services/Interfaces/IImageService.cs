@@ -5,8 +5,9 @@ namespace rlara.prototypes.services.Interfaces
 {
     public interface IImageService
     {
-        ConcurrentBag<ImageDomainModel> GetImagesByCategoryId(int imageId);
-        ConcurrentBag<ImageDomainModel> GetImagesByProductId(int imageId);
+        ImageDomainModel GetImageByCategoryId(int categoryId);
+        ImageDomainModel GetImageByProductId(int productId);
+        ConcurrentBag<ImageDomainModel> GetImagesByProductId(int productId);
         ImageDomainModel Get(int imageId);
         ImageDomainModel Create(ImageDomainModel imageDomainModel);
         ImageDomainModel Update(ImageDomainModel imageDomainModel);
