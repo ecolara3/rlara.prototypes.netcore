@@ -5,10 +5,10 @@ namespace rlara.prototypes.services.Interfaces
 {
     public interface IProductService
     {
-        ConcurrentBag<ProductDomainModel> GetProductsByCategory(int categoryId);
-        ProductDomainModel Get(int id);
-        ProductDomainModel Create(ProductDomainModel image);
-        ProductDomainModel Update(ProductDomainModel image);
-        bool Delete(ProductDomainModel image);
+        ConcurrentBag<ProductDomainModel> GetProductsByCategory(int productId);
+        ProductDomainModel Get(int productId);
+        ProductDomainModel Create(ProductDomainModel productDomainModel);
+        ProductDomainModel Update(ProductDomainModel productDomainModel);
+        bool Delete(ProductDomainModel productDomainModel);
     }
 }

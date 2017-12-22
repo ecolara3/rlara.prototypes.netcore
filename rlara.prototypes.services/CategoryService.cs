@@ -60,11 +60,11 @@ namespace rlara.prototypes.services
             
         }
 
-        public bool Delete(CategoryDomainModel category)
+        public bool Delete(CategoryDomainModel categoryDomainModel)
         {
             try
             {
-                Category categoryEntity = _mapper.CategoryDomainModelToEntity(category);
+                Category categoryEntity = _mapper.CategoryDomainModelToEntity(categoryDomainModel);
                 _unitOfWork.CategoryRepository.Delete(categoryEntity);
                 _unitOfWork.Save();
                 return true;

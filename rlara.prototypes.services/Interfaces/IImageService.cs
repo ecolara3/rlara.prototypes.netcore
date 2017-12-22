@@ -5,11 +5,11 @@ namespace rlara.prototypes.services.Interfaces
 {
     public interface IImageService
     {
-        ConcurrentBag<ImageDomainModel> GetImagesByCategoryId(int categoryId);
-        ConcurrentBag<ImageDomainModel> GetImagesByProductId(int productId);
-        ImageDomainModel Get(int id);
-        ImageDomainModel Create(ImageDomainModel image);
-        ImageDomainModel Update(ImageDomainModel image);
-        bool Delete(ImageDomainModel image);
+        ConcurrentBag<ImageDomainModel> GetImagesByCategoryId(int imageId);
+        ConcurrentBag<ImageDomainModel> GetImagesByProductId(int imageId);
+        ImageDomainModel Get(int imageId);
+        ImageDomainModel Create(ImageDomainModel imageDomainModel);
+        ImageDomainModel Update(ImageDomainModel imageDomainModel);
+        bool Delete(ImageDomainModel imageDomainModel);
     }
 }
