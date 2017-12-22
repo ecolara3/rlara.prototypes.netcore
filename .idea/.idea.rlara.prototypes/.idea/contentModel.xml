@@ -16,9 +16,11 @@
         </e>
         <e p="Infrastructure" t="Include">
           <e p="BaseRepository.cs" t="Include" />
+          <e p="IBaseRepository.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+          <e p="UnitOfWork.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
-          <e p="IBaseRepository.cs" t="Include" />
           <e p="ICategoryRepository.cs" t="Include" />
           <e p="IImageRepository.cs" t="Include" />
           <e p="IProductRepository.cs" t="Include" />
@@ -58,15 +60,18 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CategoryService.cs" t="Include" />
         <e p="DomainModels" t="Include">
-          <e p="Category.cs" t="Include" />
-          <e p="Image.cs" t="Include" />
-          <e p="Product.cs" t="Include" />
+          <e p="CategoryDomainModel.cs" t="Include" />
+          <e p="ImageDomainModel.cs" t="Include" />
+          <e p="ProductDomainModel.cs" t="Include" />
         </e>
         <e p="ImageService.cs" t="Include" />
         <e p="Interfaces" t="Include">
           <e p="ICategoryService.cs" t="Include" />
           <e p="IImageService.cs" t="Include" />
           <e p="IProductService.cs" t="Include" />
+        </e>
+        <e p="Mappers" t="Include">
+          <e p="Mapper.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

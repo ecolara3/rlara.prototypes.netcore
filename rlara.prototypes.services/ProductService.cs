@@ -6,27 +6,27 @@ namespace rlara.prototypes.services
 {
     public class ProductService:IProductService
     {
-        public ConcurrentBag<Product> GetProductsByCategory(int categoryId)
+        public ConcurrentBag<ProductDomainModel> GetProductsByCategory(int categoryId)
         {
             throw new System.NotImplementedException();
         }
 
-        public Product Get(int id)
+        public ProductDomainModel Get(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public Product Create(Product image)
+        public ProductDomainModel Create(ProductDomainModel image)
         {
             throw new System.NotImplementedException();
         }
 
-        public Product Update(Product image)
+        public ProductDomainModel Update(ProductDomainModel image)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool Delete(Product image)
+        public bool Delete(ProductDomainModel image)
         {
             throw new System.NotImplementedException();
         }

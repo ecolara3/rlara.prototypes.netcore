@@ -4,9 +4,9 @@ namespace rlara.prototypes.services.Interfaces
 {
     public interface ICategoryService
     {
-        Category Get(int id);
-        Category Create(Category image);
-        Category Update(Category image);
-        bool Delete(Category image);
+        CategoryDomainModel Get(int id);
+        CategoryDomainModel Create(CategoryDomainModel image);
+        CategoryDomainModel Update(CategoryDomainModel image);
+        bool Delete(CategoryDomainModel image);
     }
 }

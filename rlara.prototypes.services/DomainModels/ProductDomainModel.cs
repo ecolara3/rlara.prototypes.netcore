@@ -3,12 +3,11 @@ using System.Collections.Concurrent;
 
 namespace rlara.prototypes.services.DomainModels
 {
-    public class Product
+    public class ProductDomainModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime CreationDate { get; set; }
-        public Category Category { get; set; }
-        public ConcurrentBag<Image> Images { get; set; }
+        public ConcurrentBag<ImageDomainModel> Images { get; set; }
     }
 }

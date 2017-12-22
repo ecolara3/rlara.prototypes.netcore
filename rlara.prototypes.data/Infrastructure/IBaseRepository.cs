@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace rlara.prototypes.data.Interfaces
+namespace rlara.prototypes.data.Infrastructure
 {
     public interface IBaseRepository<T> where T : class
     {

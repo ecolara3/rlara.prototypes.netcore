@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using rlara.prototypes.data.Interfaces;
 
 namespace rlara.prototypes.data.Infrastructure
@@ -6,7 +7,7 @@ namespace rlara.prototypes.data.Infrastructure
 
     public abstract class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly StoreDBContext _storeDbContext;
+        protected readonly StoreDBContext _storeDbContext;
 
 
         protected BaseRepository(StoreDBContext storeDbContext)
@@ -37,6 +38,26 @@ namespace rlara.prototypes.data.Infrastructure
         public void Delete(T entity)
         {
             _storeDbContext.Remove(entity);
+        }
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    _storeDbContext.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }
