@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Admin Page";
+}
+
+<style>
+    hr,footer {
+        clear: both;
+    }
+        
+        
+        
+     
+</style>
+
+@await Component.InvokeAsync("AdminNav")
+
+@await Component.InvokeAsync("AdminUsers")
+

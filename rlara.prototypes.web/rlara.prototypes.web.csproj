@@ -13,4 +13,7 @@
     <ProjectReference Include="..\rlara.prototypes.data\rlara.prototypes.data.csproj" />
     <ProjectReference Include="..\rlara.prototypes.identity\rlara.prototypes.identity.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Shared\Components\AdminUsersView" />
+  </ItemGroup>
 </Project>

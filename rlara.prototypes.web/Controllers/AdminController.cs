@@ -3,13 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace rlara.prototypes.web.Controllers
 {
-    public class InventoryController : Controller
+    public class AdminController : Controller
     {
         // GET
         public IActionResult Index()
         {
-            throw new NotImplementedException();
+            return View();
         }
+        
+        
         
     }
 }

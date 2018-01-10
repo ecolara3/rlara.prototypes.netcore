@@ -4,7 +4,7 @@
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.reporters.netstandard15.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.utility.netstandard15.dll" t="Include" />
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.2.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
-    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_rlara.prototypes.1662516213.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_rlara.prototypes.1662516213.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="rlara.prototypes.data" t="IncludeRecursive">
@@ -96,6 +96,7 @@
           </e>
         </e>
         <e p="rlara.prototypes.tests.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="rlara.prototypes.web" t="IncludeRecursive">
         <e p=".bowerrc" t="Include" />
@@ -106,8 +107,8 @@
         <e p="bundleconfig.json" t="Include" />
         <e p="Controllers" t="Include">
           <e p="AccountController.cs" t="Include" />
+          <e p="AdminController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
-          <e p="InventoryController.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="Identity" t="Include">
@@ -135,6 +136,10 @@
         <e p="Program.cs" t="Include" />
         <e p="rlara.prototypes.web.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
+        <e p="ViewComponents" t="Include">
+          <e p="AdminNavViewComponent.cs" t="Include" />
+          <e p="AdminUsersViewComponent.cs" t="Include" />
+        </e>
         <e p="ViewModels" t="Include">
           <e p="LoginViewModel.cs" t="Include" />
           <e p="RegisterViewModel.cs" t="Include" />
@@ -146,12 +151,23 @@
             <e p="Login.cshtml" t="Include" />
             <e p="Register.cshtml" t="Include" />
           </e>
+          <e p="Admin" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
           <e p="Home" t="Include">
             <e p="Index.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
+            <e p="Components" t="Include">
+              <e p="AdminNav" t="Include">
+                <e p="Default.cshtml" t="Include" />
+              </e>
+              <e p="AdminUsers" t="Include">
+                <e p="Default.cshtml" t="Include" />
+              </e>
+            </e>
             <e p="Error.cshtml" t="Include" />
           </e>
         </e>
